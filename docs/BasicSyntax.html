@@ -1,0 +1,358 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Basic Syntax · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+    
+    
+        
+        <link rel="stylesheet" href="forkme.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Letstry.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="BasicSyntax.html">
+            
+                <a href="BasicSyntax.html">
+            
+                    
+                    Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Letstry.html">
+            
+                <a href="Letstry.html">
+            
+                    
+                    Let's Try
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="BasicSyntax2.html">
+            
+                <a href="BasicSyntax2.html">
+            
+                    
+                    Basic Syntax2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Basic Syntax</a>
+    </h1>
+    <!-- ForkMeOnGithubRibon -->
+    
+
+<a class="forkme" href="https://github.com/sugarnaoming/clang_gitbook">Fork me on Github</a>
+
+
+
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="basic-syntax">Basic Syntax</h1>
+<h2 id="more-basic">More Basic</h2>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span> </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello World&quot;</span>);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><code>#include&lt;stdio.h&gt;</code>mean is reading library(In C lang it is called header file).<br><code>int main(void)</code>is entry point function of programs.<br><code>printf()</code>is display to standerd output.</p>
+<h2 id="variable-declaration">Variable declaration</h2>
+<pre><code class="lang-C"><span class="hljs-keyword">short</span> sh;
+<span class="hljs-keyword">int</span> in = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">long</span> lo = in;
+<span class="hljs-keyword">float</span> fl = <span class="hljs-number">0.5</span>;
+<span class="hljs-keyword">double</span> dou = <span class="hljs-number">0.55</span>;
+<span class="hljs-keyword">char</span> = <span class="hljs-string">&apos;a&apos;</span>;
+<span class="hljs-keyword">bool</span> bo = <span class="hljs-literal">true</span>;
+
+<span class="hljs-keyword">char</span> <span class="hljs-built_in">array</span>[<span class="hljs-number">5</span>] = {<span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;o&apos;</span>, <span class="hljs-string">&apos;g&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;\0&apos;</span>};
+<span class="hljs-keyword">char</span> str[] = <span class="hljs-string">&quot;piyo&quot;</span>;
+</code></pre>
+<blockquote>
+<p>&apos;\0&apos; mean is line end.</p>
+</blockquote>
+<p>This is part of the variable declaration.</p>
+<h2 id="enum">enum</h2>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-comment">// default start is 0</span>
+<span class="hljs-keyword">enum</span> Week { Sun, Mon, Tue};
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+  <span class="hljs-keyword">enum</span> Week week;
+  week = Sun;
+  <span class="hljs-comment">// Can not used other than defined enum value</span>
+  <span class="hljs-comment">// week = Fri; // Error</span>
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d&quot;</span>, week);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h2 id="for-and-while-loop">&quot;for&quot; and &quot;while&quot; loop</h2>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;for loop : %d\n&quot;</span>, i);
+}
+
+<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span>(j == <span class="hljs-number">3</span>) {
+  j++;
+  <span class="hljs-keyword">if</span>(j == <span class="hljs-number">1</span>) <span class="hljs-keyword">continue</span>;
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;while loop : %d\n&quot;</span>, j);
+}
+
+<span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span> {
+  k++;
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%d\n&quot;</span>, k);
+}<span class="hljs-keyword">while</span>(k == <span class="hljs-number">5</span>);
+</code></pre>
+<h2 id="switch-case-and-goto">&quot;switch case&quot; and &quot;goto&quot;</h2>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-keyword">int</span> j = <span class="hljs-number">2</span>
+bar:
+swtich(j) {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>: <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>: <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>: <span class="hljs-keyword">goto</span> foo;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>: <span class="hljs-keyword">goto</span> bar;
+    <span class="hljs-keyword">default</span>: <span class="hljs-keyword">break</span>;
+}
+foo:
+</code></pre>
+<blockquote>
+<p>Be careful not to become spaghetti code when using &apos;goto&apos;.</p>
+</blockquote>
+<h2 id="if-and-if-else">&quot;if&quot; and &quot;if else&quot;</h2>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">if</span>(i == <span class="hljs-number">0</span>) {
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;i == 1&quot;</span>);
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(i == <span class="hljs-number">2</span>) {
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;i == 2&quot;</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Other&quot;</span>);
+}
+</code></pre>
+<h2 id="function">function</h2>
+<pre><code class="lang-C">#include&lt;stdio.h&gt;
+
+void disphello(void) {
+  printf(&quot;Hello);
+}
+
+int main(void){
+  disphello();
+
+  return 0;
+}
+</code></pre>
+<h2 id="frequently-used-function-declaration-method">Frequently used function declaration method</h2>
+<pre><code class="lang-C"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">disphello</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+  disphello();
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">disphello</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+  <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello&quot;</span>);
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Letstry.html" class="navigation navigation-next " aria-label="Next page: Let's Try">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Basic Syntax","level":"1.2","depth":1,"next":{"title":"Let's Try","level":"1.3","depth":1,"path":"Letstry.md","ref":"Letstry.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"forkme.css"}},"file":{"path":"BasicSyntax.md","mtime":"2017-06-22T02:01:41.449Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-22T02:45:04.734Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
